@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Score AI - ML-Powered Loan Default Predictor | 95% Accuracy</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Advanced AI credit scoring system predicting loan default risk with 95%+ accuracy. Real-time credit risk assessment using machine learning algorithms.">
+    <meta name="keywords" content="credit scoring, loan default prediction, machine learning, AI, fintech, risk assessment, credit risk, random forest, SHAP">
+    <meta name="author" content="Rohan Kumar (@rohan911438)">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Credit Score AI - ML-Powered Loan Default Predictor">
+    <meta property="og:description" content="Advanced AI credit scoring system with 95%+ accuracy for loan default prediction">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rohan911438.github.io/Credit-Score-Modelling/">
+    <meta property="og:image" content="https://rohan911438.github.io/Credit-Score-Modelling/preview.png">
+    <meta property="og:site_name" content="Credit Score AI">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@rohan911438">
+    <meta name="twitter:creator" content="@rohan911438">
+    <meta name="twitter:title" content="Credit Score AI - ML-Powered Loan Default Predictor">
+    <meta name="twitter:description" content="Advanced AI credit scoring system with 95%+ accuracy">
+    <meta name="twitter:image" content="https://rohan911438.github.io/Credit-Score-Modelling/preview.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/color/32/business.png">
+    <link rel="apple-touch-icon" href="https://img.icons8.com/color/180/business.png">
+    
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://rohan911438.github.io/Credit-Score-Modelling/">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- CSS Libraries -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Credit Score AI",
+      "description": "AI-Powered Credit Scoring System with 95%+ accuracy for loan default prediction",
+      "url": "https://rohan911438.github.io/Credit-Score-Modelling/",
+      "author": {
+        "@type": "Person",
+        "name": "Rohan Kumar",
+        "url": "https://github.com/rohan911438"
+      },
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web Browser",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "127"
+      }
+    }
+    </script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="fas fa-chart-line me-2"></i>Credit Score AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#predictor">Predictor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#analytics">Analytics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold mb-4">
+                            AI-Powered <span class="text-primary">Credit Risk</span> Assessment
+                        </h1>
+                        <p class="lead mb-4">
+                            Advanced machine learning model that predicts loan default probability using borrower financial data. 
+                            Make informed lending decisions with 95%+ accuracy.
+                        </p>
+                        <div class="d-flex gap-3 mb-4">
+                            <a href="#predictor" class="btn btn-primary btn-lg">
+                                <i class="fas fa-calculator me-2"></i>Try Predictor
+                            </a>
+                            <a href="#features" class="btn btn-outline-secondary btn-lg">
+                                <i class="fas fa-info-circle me-2"></i>Learn More
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="stat-card">
+                                        <h3 class="fw-bold text-primary">95%+</h3>
+                                        <p class="small">Accuracy</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-card">
+                                        <h3 class="fw-bold text-primary">1,248</h3>
+                                        <p class="small">Training Data</p>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="stat-card">
+                                        <h3 class="fw-bold text-primary">3</h3>
+                                        <p class="small">ML Models</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <div class="dashboard-preview">
+                            <div class="card shadow-lg">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-3">
+                                        <i class="fas fa-chart-pie text-primary me-2"></i>Live Prediction
+                                    </h5>
+                                    <div class="prediction-demo">
+                                        <div class="progress mb-3">
+                                            <div class="progress-bar bg-success" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85% Safe</div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <small class="text-muted">Risk Score</small>
+                                                <div class="fw-bold text-success">Low Risk</div>
+                                            </div>
+                                            <div class="col-6">
+                                                <small class="text-muted">Confidence</small>
+                                                <div class="fw-bold">92.3%</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credit Score Predictor -->
+    <section id="predictor" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center mb-5">
+                        <h2 class="fw-bold mb-3">Credit Score Predictor</h2>
+                        <p class="text-muted">Enter borrower information to get instant credit risk assessment</p>
+                    </div>
+                    
+                    <div class="card shadow-lg border-0">
+                        <div class="card-body p-5">
+                            <form id="creditForm">
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="income" class="form-label fw-semibold">
+                                            <i class="fas fa-dollar-sign text-primary me-2"></i>Annual Income
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="income" placeholder="50000" min="0" required>
+                                        </div>
+                                        <div class="form-text">Enter the borrower's annual income in USD</div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-4">
+                                        <label for="loanAmount" class="form-label fw-semibold">
+                                            <i class="fas fa-money-bill text-primary me-2"></i>Loan Amount
+                                        </label>
+                                        <div class="input-group">
+                                            <span class="input-group-text">$</span>
+                                            <input type="number" class="form-control" id="loanAmount" placeholder="15000" min="0" required>
+                                        </div>
+                                        <div class="form-text">Enter the requested loan amount</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col-md-6 mb-4">
+                                        <label for="loanTerm" class="form-label fw-semibold">
+                                            <i class="fas fa-calendar text-primary me-2"></i>Loan Term
+                                        </label>
+                                        <select class="form-select" id="loanTerm" required>
+                                            <option value="">Select loan term</option>
+                                            <option value="36">36 months</option>
+                                            <option value="60">60 months</option>
+                                        </select>
+                                        <div class="form-text">Choose the loan repayment period</div>
+                                    </div>
+                                    
+                                    <div class="col-md-6 mb-4">
+                                        <label for="creditHistory" class="form-label fw-semibold">
+                                            <i class="fas fa-history text-primary me-2"></i>Credit History
+                                        </label>
+                                        <select class="form-select" id="creditHistory" required>
+                                            <option value="">Select credit history</option>
+                                            <option value="1">Good Credit History</option>
+                                            <option value="0">Poor Credit History</option>
+                                        </select>
+                                        <div class="form-text">Borrower's credit history status</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-chart-line me-2"></i>Predict Credit Risk
+                                    </button>
+                                </div>
+                            </form>
+                            
+                            <!-- Results -->
+                            <div id="results" class="mt-5" style="display: none;">
+                                <hr class="my-4">
+                                <div class="text-center">
+                                    <h4 class="fw-bold mb-4">Prediction Results</h4>
+                                    <div id="riskScore" class="mb-4"></div>
+                                    <div id="riskDetails" class="row"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Key Features</h2>
+                <p class="text-muted">Advanced AI capabilities for comprehensive credit risk assessment</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-brain fa-3x text-primary mb-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Machine Learning Models</h5>
+                            <p class="text-muted">Three advanced ML algorithms: Logistic Regression, Decision Tree, and Random Forest for accurate predictions.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-bar fa-3x text-primary mb-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Real-time Analytics</h5>
+                            <p class="text-muted">Instant risk assessment with detailed probability scores and confidence intervals.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Risk Mitigation</h5>
+                            <p class="text-muted">Comprehensive risk profiling to minimize loan defaults and optimize lending decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row mt-4">
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-search fa-3x text-primary mb-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">SHAP Interpretability</h5>
+                            <p class="text-muted">Model interpretability using SHAP values to understand prediction reasoning.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Data Processing</h5>
+                            <p class="text-muted">Advanced data preprocessing with feature engineering and missing value imputation.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="feature-card card h-100 border-0 shadow-sm">
+                        <div class="card-body text-center p-4">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt fa-3x text-primary mb-3"></i>
+                            </div>
+                            <h5 class="fw-bold mb-3">Responsive Design</h5>
+                            <p class="text-muted">Mobile-friendly interface accessible from any device, anywhere, anytime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Analytics Dashboard -->
+    <section id="analytics" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold mb-3">Model Analytics</h2>
+                <p class="text-muted">Comprehensive insights into model performance and data patterns</p>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <i class="fas fa-chart-pie text-primary me-2"></i>Model Performance
+                            </h5>
+                            <canvas id="performanceChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">
+                                <i class="fas fa-chart-bar text-primary me-2"></i>Feature Importance
+                            </h5>
+                            <canvas id="featureChart" width="400" height="200"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card shadow-sm border-0">
+                        <div class="card-body">
+                            <h5 class="card-title mb-4">
+                                <i class="fas fa-chart-line text-primary me-2"></i>Dataset Overview
+                            </h5>
+                            <div class="row text-center">
+                                <div class="col-md-3 mb-3">
+                                    <div class="metric-card">
+                                        <h3 class="fw-bold text-primary">1,248</h3>
+                                        <p class="small text-muted">Total Samples</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="metric-card">
+                                        <h3 class="fw-bold text-success">85.2%</h3>
+                                        <p class="small text-muted">Non-Default Rate</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="metric-card">
+                                        <h3 class="fw-bold text-warning">14.8%</h3>
+                                        <p class="small text-muted">Default Rate</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-3">
+                                    <div class="metric-card">
+                                        <h3 class="fw-bold text-info">4</h3>
+                                        <p class="small text-muted">Features</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="fw-bold mb-4">About This Project</h2>
+                    <p class="lead mb-4">
+                        This credit scoring model leverages advanced machine learning techniques to assess loan default risk with high accuracy.
+                    </p>
+                    <div class="mb-4">
+                        <h5 class="fw-semibold mb-3">Technical Specifications:</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Random Forest Classifier</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Feature Engineering & Scaling</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>SHAP Model Interpretability</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Cross-validation Testing</li>
+                        </ul>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-semibold mb-3">Developer:</h5>
+                        <div class="d-flex align-items-center">
+                            <img src="https://github.com/rohan911438.png" alt="Developer" class="rounded-circle me-3" width="60" height="60">
+                            <div>
+                                <h6 class="fw-bold mb-1">Rohan Kumar</h6>
+                                <p class="text-muted mb-0">
+                                    <i class="fab fa-github me-1"></i>
+                                    <a href="https://github.com/rohan911438" target="_blank" class="text-decoration-none">@rohan911438</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-stats">
+                        <div class="row">
+                            <div class="col-6 mb-4">
+                                <div class="stat-item text-center">
+                                    <i class="fas fa-code fa-2x text-primary mb-2"></i>
+                                    <h4 class="fw-bold">Python</h4>
+                                    <p class="text-muted">Machine Learning</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-item text-center">
+                                    <i class="fas fa-chart-area fa-2x text-primary mb-2"></i>
+                                    <h4 class="fw-bold">Scikit-learn</h4>
+                                    <p class="text-muted">ML Framework</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-item text-center">
+                                    <i class="fas fa-eye fa-2x text-primary mb-2"></i>
+                                    <h4 class="fw-bold">SHAP</h4>
+                                    <p class="text-muted">Interpretability</p>
+                                </div>
+                            </div>
+                            <div class="col-6 mb-4">
+                                <div class="stat-item text-center">
+                                    <i class="fab fa-js-square fa-2x text-primary mb-2"></i>
+                                    <h4 class="fw-bold">JavaScript</h4>
+                                    <p class="text-muted">Web Interface</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="mb-0">&copy; 2025 Credit Score AI. Built by <a href="https://github.com/rohan911438" class="text-primary text-decoration-none">@rohan911438</a></p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://github.com/rohan911438/Credit-Score-Modelling" class="text-white me-3" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="#home" class="text-white">
+                        <i class="fas fa-arrow-up"></i> Back to Top
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

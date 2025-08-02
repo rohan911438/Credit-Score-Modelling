@@ -1,0 +1,48 @@
+{
+  "name": "credit-score-ai",
+  "version": "2.0.0",
+  "description": "AI-Powered Credit Scoring System with Web Interface",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 3000",
+    "build": "echo 'Static site - no build required'",
+    "deploy": "echo 'Deploy to GitHub Pages'",
+    "test": "echo 'No tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rohan911438/Credit-Score-Modelling.git"
+  },
+  "keywords": [
+    "credit-scoring",
+    "machine-learning",
+    "loan-default-prediction",
+    "artificial-intelligence",
+    "fintech",
+    "risk-assessment",
+    "web-application",
+    "github-pages"
+  ],
+  "author": {
+    "name": "Rohan Kumar",
+    "email": "rohan911438@github.com",
+    "url": "https://github.com/rohan911438"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rohan911438/Credit-Score-Modelling/issues"
+  },
+  "homepage": "https://rohan911438.github.io/Credit-Score-Modelling/",
+  "dependencies": {},
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "python": ">=3.8.0"
+  }
+}

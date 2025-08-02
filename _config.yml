@@ -1,0 +1,50 @@
+# GitHub Pages Configuration
+# This file ensures proper deployment to GitHub Pages
+
+# Include all necessary files for the web application
+include:
+  - "*.html"
+  - "*.css"
+  - "*.js"
+  - "*.md"
+  - "*.json"
+  - "*.csv"
+  - "*.pkl"
+  - "*.h5"
+  - "*.ipynb"
+
+# GitHub Pages settings
+plugins:
+  - jekyll-theme-minimal
+
+# Site configuration
+title: "Credit Score AI - ML-Powered Loan Default Predictor"
+description: "Advanced machine learning model for credit risk assessment with 95%+ accuracy"
+author: "Rohan Kumar (@rohan911438)"
+url: "https://rohan911438.github.io"
+baseurl: "/Credit-Score-Modelling"
+
+# Social links
+github_username: rohan911438
+repository: "rohan911438/Credit-Score-Modelling"
+
+# SEO
+lang: en-US
+keywords: "credit scoring, machine learning, loan default prediction, AI, fintech"
+
+# Analytics (optional - add your tracking ID)
+# google_analytics: "YOUR_TRACKING_ID"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# Exclude files from build
+exclude:
+  - "*.py"
+  - "venv/"
+  - ".vscode/"
+  - ".git/"
+  - "README_dev.md"

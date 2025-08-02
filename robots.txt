@@ -1,0 +1,23 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rohan911438.github.io/Credit-Score-Modelling/sitemap.xml
+
+# Disallow sensitive files
+Disallow: /*.pkl
+Disallow: /*.h5
+Disallow: /*.csv
+Disallow: /.git/
+Disallow: /.github/
+Disallow: /venv/
+Disallow: /.vscode/
+
+# Allow main pages
+Allow: /index.html
+Allow: /styles.css
+Allow: /script.js
+Allow: /README.md
+
+# Crawl delay (optional)
+Crawl-delay: 1
