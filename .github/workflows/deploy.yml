@@ -15,10 +15,6 @@ jobs:
       pages: write
       id-token: write
     
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -60,8 +56,8 @@ jobs:
         python -c "
         import os
         
-        if os.path.exists('styles.css'):
-            with open('styles.css', 'r', encoding='utf-8') as f:
+        if os.path.exists('assets/css/styles.css'):
+            with open('assets/css/styles.css', 'r', encoding='utf-8') as f:
                 content = f.read()
                 if len(content) > 0:
                     print('✅ CSS file exists and has content')
@@ -69,7 +65,7 @@ jobs:
                     print('❌ CSS file is empty')
                     exit(1)
         else:
-            print('❌ styles.css not found')
+            print('❌ assets/css/styles.css not found')
             exit(1)
         "
     
@@ -79,8 +75,8 @@ jobs:
         python -c "
         import os
         
-        if os.path.exists('script.js'):
-            with open('script.js', 'r', encoding='utf-8') as f:
+        if os.path.exists('assets/js/script.js'):
+            with open('assets/js/script.js', 'r', encoding='utf-8') as f:
                 content = f.read()
                 if 'function' in content and len(content) > 100:
                     print('✅ JavaScript file exists and has functions')
@@ -88,7 +84,7 @@ jobs:
                     print('❌ JavaScript file seems incomplete')
                     exit(1)
         else:
-            print('❌ script.js not found')
+            print('❌ assets/js/script.js not found')
             exit(1)
         "
     
@@ -98,7 +94,7 @@ jobs:
         python -c "
         import os
         
-        required_files = ['credit_score_model.pkl', 'loan_data_1248_with_missing.csv']
+        required_files = ['models/credit_score_model.pkl', 'data/loan_data_1248_with_missing.csv']
         missing_files = []
         
         for file in required_files:

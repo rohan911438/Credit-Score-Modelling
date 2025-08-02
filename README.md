@@ -416,28 +416,66 @@ function makePrediction(data) {
 ```
 Credit-Score-Modelling/
 │
-├── 📄 index.html                    # Main web application
-├── 🎨 styles.css                    # Custom CSS styling
-├── ⚡ script.js                     # JavaScript functionality
-├── 📊 credit-scoring-model (2).ipynb # Jupyter notebook
-├── 🤖 credit_score_model.pkl       # Trained ML model (Pickle)
-├── 🔧 credit_score_model.h5        # Trained ML model (HDF5)
-├── 📈 loan_data_1248_with_missing.csv # Training dataset
-├── 📖 README.md                    # Project documentation
-├── ⚙️ requirements.txt             # Python dependencies
-└── 📋 LICENSE                      # MIT License
+├── 📄 Web Application
+│   ├── index.html              # Main application interface
+│   ├── manifest.json           # PWA configuration
+│   ├── sitemap.xml            # SEO optimization
+│   └── robots.txt             # Search engine instructions
+│
+├── 🎨 Assets
+│   ├── assets/css/
+│   │   └── styles.css         # Custom styling (1,200+ lines)
+│   ├── assets/js/
+│   │   └── script.js          # JavaScript functionality (800+ lines)
+│   └── assets/images/
+│       └── (placeholder)      # Future image assets
+│
+├── 🤖 Machine Learning
+│   ├── models/
+│   │   ├── credit_score_model.pkl    # Trained model (Pickle)
+│   │   └── credit_score_model.h5     # Trained model (HDF5)
+│   ├── notebooks/
+│   │   └── credit-scoring-model.ipynb # ML development notebook
+│   └── data/
+│       └── loan_data_1248_with_missing.csv # Training dataset
+│
+├── 📖 Documentation
+│   ├── docs/
+│   │   ├── CONTRIBUTING.md    # Contributing guidelines
+│   │   └── DEPLOYMENT.md      # Deployment instructions
+│   ├── README.md              # Main documentation
+│   ├── PROJECT_STRUCTURE.md   # Structure documentation
+│   └── DIRECTORY_INDEX.md     # File organization guide
+│
+├── ⚙️ Configuration
+│   ├── .github/workflows/
+│   │   └── deploy.yml         # CI/CD pipeline
+│   ├── _config.yml           # Jekyll configuration
+│   ├── package.json          # Project metadata
+│   ├── requirements.txt      # Python dependencies
+│   └── LICENSE               # MIT license
+│
+└── 🔧 Development
+    └── .git/                 # Git repository
 ```
 
-### **File Descriptions**
+### **File Organization Benefits**
+- **🎯 Clear Separation**: Frontend, ML, docs, and config in logical folders
+- **🚀 Easy Maintenance**: Quick access to specific components
+- **📱 Scalable Structure**: Ready for future enhancements
+- **🔍 Better Navigation**: Intuitive file organization
+- **⚡ Performance**: Optimized asset loading
 
-| File | Purpose | Technology |
-|------|---------|------------|
-| `index.html` | Main web interface | HTML5, Bootstrap |
-| `styles.css` | Custom styling | CSS3, Flexbox, Grid |
-| `script.js` | ML predictions & UI | Vanilla JavaScript |
-| `credit-scoring-model (2).ipynb` | Model development | Python, Jupyter |
-| `*.pkl` / `*.h5` | Trained models | Scikit-learn, H5PY |
-| `*.csv` | Training data | Pandas compatible |
+### **Key Directory Purposes**
+
+| Directory | Purpose | Key Files |
+|-----------|---------|-----------|
+| `assets/` | Frontend resources | CSS, JS, images |
+| `models/` | ML model artifacts | PKL, H5 files |
+| `notebooks/` | Data science work | Jupyter notebooks |
+| `data/` | Training datasets | CSV files |
+| `docs/` | Documentation | Guides, instructions |
+| `.github/` | CI/CD & automation | Workflows, templates |
 
 ---
 

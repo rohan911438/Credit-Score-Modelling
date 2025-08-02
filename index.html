@@ -55,7 +55,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
     
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -381,7 +381,9 @@
                             <h5 class="card-title mb-3">
                                 <i class="fas fa-chart-pie text-primary me-2"></i>Model Performance
                             </h5>
-                            <canvas id="performanceChart" width="400" height="200"></canvas>
+                            <div class="chart-container">
+                                <canvas id="performanceChart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -392,7 +394,9 @@
                             <h5 class="card-title mb-3">
                                 <i class="fas fa-chart-bar text-primary me-2"></i>Feature Importance
                             </h5>
-                            <canvas id="featureChart" width="400" height="200"></canvas>
+                            <div class="chart-container">
+                                <canvas id="featureChart"></canvas>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -530,6 +534,6 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-    <script src="script.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>

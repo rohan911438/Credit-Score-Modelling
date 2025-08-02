@@ -1,0 +1,178 @@
+# Credit Score AI - .gitignore
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor and IDE Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.settings/
+
+# Python Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Data Files (if sensitive)
+# Uncomment if you have sensitive data
+# data/sensitive/
+# *.csv
+# *.xlsx
+
+# Log Files
+*.log
+logs/
+*.out
+
+# Temporary Files
+tmp/
+temp/
+.tmp/
+.cache/
+
+# Node.js (if used)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build Output
+dist/
+build/
+out/
+
+# Database Files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Coverage Reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# Documentation Build
+docs/_build/
+site/
+
+# Backup Files
+*.bak
+*.backup
+*~
+
+# Large Model Files (if too big for Git)
+# Uncomment if models are very large
+# models/*.pkl
+# models/*.h5
+# models/*.joblib
+
+# Compiled Files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# System Files
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Local Configuration
+config.local.json
+settings.local.json
+
+# Development Files
+.development/
+.local/
+
+# Keep Important Files (Override ignore patterns)
+!assets/css/styles.css
+!assets/js/script.js
+!models/credit_score_model.pkl
+!models/credit_score_model.h5
+!data/loan_data_1248_with_missing.csv
+
+# GitHub Pages
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Security Files
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+
+# Analytics and Tracking
+.analytics/
+.tracking/

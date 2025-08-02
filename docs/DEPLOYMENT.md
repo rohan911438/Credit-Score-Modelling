@@ -4,8 +4,8 @@
 
 ### 📁 **File Structure**
 - [ ] `index.html` - Main application file
-- [ ] `styles.css` - Custom styling
-- [ ] `script.js` - JavaScript functionality
+- [ ] `assets/css/styles.css` - Custom styling
+- [ ] `assets/js/script.js` - JavaScript functionality
 - [ ] `README.md` - Comprehensive documentation
 - [ ] `LICENSE` - MIT license file
 - [ ] `manifest.json` - PWA manifest
@@ -14,6 +14,7 @@
 - [ ] `_config.yml` - Jekyll configuration
 - [ ] `requirements.txt` - Python dependencies
 - [ ] `.github/workflows/deploy.yml` - CI/CD pipeline
+- [ ] `.gitignore` - Git ignore patterns
 
 ### 🔧 **Technical Requirements**
 - [ ] HTML5 semantic structure
@@ -25,10 +26,10 @@
 - [ ] Google Fonts integration
 
 ### 📊 **ML Model Files**
-- [ ] `credit-scoring-model (2).ipynb` - Jupyter notebook
-- [ ] `credit_score_model.pkl` - Trained model
-- [ ] `credit_score_model.h5` - Alternative model format
-- [ ] `loan_data_1248_with_missing.csv` - Dataset
+- [ ] `notebooks/credit-scoring-model.ipynb` - Jupyter notebook
+- [ ] `models/credit_score_model.pkl` - Trained model
+- [ ] `models/credit_score_model.h5` - Alternative model format
+- [ ] `data/loan_data_1248_with_missing.csv` - Dataset
 
 ### 🔍 **SEO & Performance**
 - [ ] Meta tags for SEO

@@ -316,13 +316,17 @@ function initializePerformanceChart() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 1.5,
             plugins: {
                 legend: {
                     position: 'bottom',
                     labels: {
-                        padding: 20,
-                        usePointStyle: true
+                        padding: 15,
+                        usePointStyle: true,
+                        font: {
+                            size: 12
+                        }
                     }
                 },
                 tooltip: {
@@ -332,6 +336,9 @@ function initializePerformanceChart() {
                         }
                     }
                 }
+            },
+            layout: {
+                padding: 10
             }
         }
     });
@@ -361,7 +368,8 @@ function initializeFeatureChart() {
         },
         options: {
             responsive: true,
-            maintainAspectRatio: false,
+            maintainAspectRatio: true,
+            aspectRatio: 2,
             plugins: {
                 legend: {
                     display: false
@@ -381,6 +389,9 @@ function initializeFeatureChart() {
                     ticks: {
                         callback: function(value) {
                             return (value * 100).toFixed(0) + '%';
+                        },
+                        font: {
+                            size: 11
                         }
                     },
                     grid: {
@@ -388,10 +399,18 @@ function initializeFeatureChart() {
                     }
                 },
                 x: {
+                    ticks: {
+                        font: {
+                            size: 11
+                        }
+                    },
                     grid: {
                         display: false
                     }
                 }
+            },
+            layout: {
+                padding: 10
             }
         }
     });
