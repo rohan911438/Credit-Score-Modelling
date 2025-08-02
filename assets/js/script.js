@@ -9,7 +9,24 @@ document.addEventListener('DOMContentLoaded', function() {
     initializeCharts();
     setupEventListeners();
     setupSmoothScrolling();
+    setupWindowResize();
 });
+
+// Setup window resize handler for responsive charts
+function setupWindowResize() {
+    window.addEventListener('resize', function() {
+        // Debounce resize events
+        clearTimeout(this.resizeTimeout);
+        this.resizeTimeout = setTimeout(function() {
+            if (performanceChart) {
+                performanceChart.resize();
+            }
+            if (featureChart) {
+                featureChart.resize();
+            }
+        }, 250);
+    });
+}
 
 // Setup event listeners
 function setupEventListeners() {
